@@ -1,4 +1,4 @@
-from src.tools.tools import web_search, scrape_url
+from src.piplines.piplines import run_research_pipeline
 
-result = scrape_url("https://github.com/toufeeque1/LangChain-Multi-Agent-Research-System/tree/main/src/agents")
-print(result)
+topic = "The impact of Ai on the jon market in 2026"
+run_research_pipeline(topic)
